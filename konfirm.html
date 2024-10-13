@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Confirmation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="konfirm.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="confetti"></div>
+        <div class="roblox-hahhaa">
+            <div class="clip-path-group">
+                <div class="group">
+                    <div class="vector"></div>
+                </div>
+            </div>
+            <div class="vector-1"></div>
+            <div class="vector-2"></div>
+            <div class="vector-3"></div>
+            <div class="vector-4"></div>
+        </div>
+        <div class="rectangle">
+            <div class="content">
+                <img src="Frame 12.svg" alt="Happy Image" class="happy-image" />
+                <span class="yasss-jawabanmu-sudah">Yasss! Jawabanmu sudah ke-save! 🎉</span>
+                <span class="penasaran-mau-tahu">Penasaran mau tahu kamu cocok jadi apa? Ayo, langsung cek hasilnya!</span>
+                <button class="frame" onclick="checkResults()" style="cursor: pointer;">
+                    <span class="cek-hasilnya">Cek Hasilnya 👉</span>
+                </button>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+       function checkResults() {
+    const score = localStorage.getItem('score'); // Ambil skor dari localStorage
+    let profession;
+
+    // Tentukan profesi berdasarkan skor
+    if (score >= 7 && score <= 13) {
+        profession = 'auditor_it'; // IT Auditor
+    } else if (score >= 14 && score <= 20) {
+        profession = 'application_developer'; // Application Developer
+    } else if (score >= 21 && score <= 28) {
+        profession = 'system_analyst'; // System Analyst
+    }
+
+    // Arahkan ke halaman hasil sesuai profesi
+    window.location.href = `${profession}.html`;
+}
+    </script>
+    
+</body>
+</html>

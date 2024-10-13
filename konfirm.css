@@ -1,0 +1,113 @@
+:root { 
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: transparent; /* Ensure the background is transparent */
+}
+
+.confetti {
+    position: fixed; /* Change to fixed to cover entire viewport */
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    top: 0; /* Align to the top */
+    left: 0;
+    background: url(Confetti.svg) no-repeat center; /* Background image */
+    background-size: cover; /* Cover the entire area */
+    z-index: 10 /* Place behind other elements */
+}
+
+.roblox-hahhaa {
+    position: absolute;
+    width: 514px;
+    height: 514px;
+    top: 20px; /* Adjusted position */
+    left: calc(50% - 257px);
+    z-index: 6;
+    overflow: hidden;
+}
+
+.rectangle {
+    width: 80%; /* Make it responsive */
+    max-width: 500px; /* Limit max width */
+    height: 440px; /* Fixed height to prevent overflow */
+    background: #ffffff; /* Background color */
+    z-index: 11; /* Keep it on top of confetti */
+    padding: 20px; 
+    border: 3px solid #000000; /* Stroke (border) */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+    margin: 20px;
+    display: flex; /* Use flex to center content */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+}
+
+.content {
+    padding: 10px; /* Adjusted padding inside the rectangle */
+    text-align: center; /* Center align content */
+}
+
+.happy-image {
+    display: block;
+    margin: 30px auto; /* Reduced margin to 10px for tighter spacing */
+    max-width: 80%; /* Limit the image size */
+    height: auto; /* Set height to auto for aspect ratio */
+}
+
+.yasss-jawabanmu-sudah {
+    display: block;
+    text-align: center;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 18px; /* Slightly increased font size */
+    font-weight: 600;
+    margin: 2px 0; /* Further reduced margin for tighter spacing */
+}
+
+.penasaran-mau-tahu {
+    display: block;
+    text-align: center;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 14px; /* Reduced font size */
+    font-weight: 400;
+    margin: 2px 0; /* Further reduced margin for tighter spacing */
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #705772;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    padding: 10px 20px; /* Adjusted padding */
+    margin: 20px auto; 
+    position: relative; /* Ensure positioning context */
+    z-index: 10; /* Bring button to the front */
+    cursor: pointer; /* Show pointer on hover */
+    pointer-events: all;
+}
+
+.cek-hasilnya {
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px; /* Reduced font size */
+    font-weight: 600;
+}

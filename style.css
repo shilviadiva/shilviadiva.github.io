@@ -1,0 +1,326 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Header Styles */
+  header {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background: white; /* Background color for visibility */
+    z-index: 1000; /* Ensure the header is above other content */
+  }
+  
+  .main-container {
+    overflow: hidden;
+    max-width: 1200px; /* Limit the width to prevent excessive stretching */
+    margin: 0 20px; /* Increased left and right margin */
+    background: #ffffff;
+    padding: 20px; /* Add some padding for better spacing */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  #home {
+    margin-top: 120px; /* Adjust the value as needed for desired spacing */
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  
+  .frame {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the navigation items */
+    gap: 40px; /* Reduce gap for better spacing */
+    margin-bottom: 20px; /* Add spacing below the navigation */
+  }
+  
+  
+  .home,
+  .about,
+  .peminatan,
+  .developer {
+    height: 36px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px; /* Reduced font size for better responsiveness */
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-decoration: none; /* Ini untuk menghilangkan underline */
+    position: relative; /* Set position to relative for pseudo-elements */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center content horizontally */
+    margin: 40px auto; /* Add margin for spacing */
+    max-width: 1200px; /* Limit the width */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .roblox-hahhaa {
+    width: 600px; /* Set a fixed width for the image container */
+    height: auto; /* Allow height to adjust automatically */
+  }
+  
+  .visualization-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Set a maximum height for the image */
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column; /* Arrange title and button vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-right: 20px; /* Space between text and image */
+  }
+  
+  .cari-tahu-peminatan {
+    color: #1f2937;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 64px; /* Adjusted font size to 64px */
+    font-weight: 600;
+    line-height: 80px; /* Adjusted line height to reduce spacing with button */
+    margin-bottom: 30px; /* Increased margin below title for more gap */
+  }
+  
+  .frame-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px; /* Increased margin above the button */
+    padding: 10px 24px;
+    cursor: pointer;
+    background: #705772;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    transition: background 0.3s; /* Smooth background transition */
+  }
+  
+  .frame-1:hover {
+    background: #5b4455; /* Darker shade on hover */
+  }
+  
+  .mulai-quiz {
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px; /* Adjusted font size */
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .frame {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the navigation items */
+    gap: 40px; /* Reduce gap for better spacing */
+    margin-bottom: 20px; /* Add spacing below the navigation */
+  }
+  
+  
+  /* Hover effect */
+  .home:hover,
+  .about:hover,
+  .peminatan:hover,
+  .developer:hover {
+    color: #705772; /* Change text color on hover */
+  }
+  
+  /* Active effect (clicked) */
+  .home.active,
+  .about.active,
+  .peminatan.active,
+  .developer.active {
+    color: #705772; /* Change text color when active */
+  }
+  
+  /* Underline effect for active state */
+  .home.active::after,
+  .about.active::after,
+  .peminatan.active::after,
+  .developer.active::after {
+    content: ''; /* Pseudo-element for the line */
+    position: absolute;
+    left: 0; /* Align line with the left side of the text */
+    right: 0; /* Align line with the right side of the text */
+    bottom: -5px; /* Position the line below the text */
+    height: 2px; /* Height of the line */
+    background-color: #705772; /* Color of the line */
+  }
+  
+  /* Underline effect on hover */
+  .home:hover::after,
+  .about:hover::after,
+  .peminatan:hover::after,
+  .developer:hover::after {
+    content: ''; /* Pseudo-element for the line */
+    position: absolute;
+    left: 0; /* Align line with the left side of the text */
+    right: 0; /* Align line with the right side of the text */
+    bottom: -5px; /* Position the line below the text */
+    height: 2px; /* Height of the line */
+    background-color: #705772; /* Color of the line */
+  }
+  
+  .about-section {
+    text-align: center; /* Center the title */
+    margin-top: 40px; /* Space above the about section */
+  }
+  
+  .about-title {
+    font-family: Poppins, var(--default-font-family);
+    font-size: 36px; /* Adjust the title size */
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .about-content {
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 40px; /* Space above the about section */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .about-item {
+    background: #f9f9f9; /* Light background for each item */
+    border: 1px solid #e0e0e0; /* Border around items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Internal padding for items */
+    width: 300px; /* Fixed width for each item */
+    text-align: center; /* Center text within items */
+  }
+  
+  .about-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space below image */
+  }
+  
+  .about-item-title {
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px; /* Title size */
+    font-weight: 600; /* Bold title */
+    color: #1f2937; /* Title color */
+    margin-bottom: 10px; /* Space below title */
+  }
+  
+  .about-item-subtitle {
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px; /* Subtitle size */
+    color: #666666; /* Subtitle color */
+  }
+  .peminatan-section {
+    text-align: center; /* Center the title */
+    margin-top: 40px; /* Space above the peminatan section */
+    background-color: #f2f3f5; /* Light background for the section */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners for the section */
+  }
+  
+  .peminatan-title {
+    font-family: Poppins, var(--default-font-family);
+    font-size: 36px; /* Adjust the title size */
+    font-weight: 600;
+    color: #1f2937; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .peminatan-content {
+    display: flex; /* Use flexbox to arrange items */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .peminatan-item {
+    background: #ffffff; /* White background for each item */
+    border: 1px solid #e0e0e0; /* Border around items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Internal padding for items */
+    width: 300px; /* Fixed width for each item */
+    text-align: center; /* Center text within items */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s; /* Smooth scaling effect */
+  }
+  
+  .peminatan-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .peminatan-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 15px; /* Space below image */
+  }
+  
+  .peminatan-item-title {
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px; /* Title size */
+    font-weight: 600; /* Bold title */
+    color: #1f2937; /* Title color */
+    margin-bottom: 10px; /* Space below title */
+  }
+  
+  .peminatan-item-description {
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px; /* Description size */
+    color: #666666; /* Description color */
+  }
+  
+  .footer {
+    background-color: #B4E1E1; /* Solid background color */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+  }
+  
+  .footer-content {
+    font-family: Poppins, var(--default-font-family);
+    color: #1f2937; /* Text color */
+    font-size: 16px; /* Font size */
+  }
+  
+  .footer-content p {
+    margin: 5px 0; /* Space between paragraphs */
+  }
+  
+  
+  .about-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .about-item:hover {
+    transform: translateY(-5px); /* Slightly raise the item on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  
+  

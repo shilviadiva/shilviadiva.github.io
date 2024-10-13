@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Preference</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="confetti-bg"></div>
+
+        <div class="content-section">
+            <div class="question-card">
+                <div class="progress-text">1 out of 7</div>
+                <div class="progress-bar">
+                    <div class="progress-filled"></div>
+                </div>
+
+                <div class="question-text">Saat kamu lagi ngerjain tugas kelompok, kamu biasanya lebih suka ngapain?</div>
+
+                <div class="options-container">
+                    <div class="option-row">
+                        <div class="label" data-choice="A" onclick="selectOption('A')">A</div>
+                        <div class="option" data-choice="A" onclick="selectOption(this)">
+                            <span class="option-text">Baca data, cari tahu masalah, dan nyusun rencana biar semuanya lancar!</span>
+                        </div>
+                    </div>
+                    <div class="option-row">
+                        <div class="label" data-choice="B" onclick="selectOption('B')">B</div>
+                        <div class="option" data-choice="B" onclick="selectOption(this)">
+                            <span class="option-text">Langsung eksekusi! Coding atau bikin sesuatu yang bisa dipakai</span>
+                        </div>
+                    </div>
+                    <div class="option-row">
+                        <div class="label" data-choice="C" onclick="selectOption('C')">C</div>
+                        <div class="option" data-choice="C" onclick="selectOption(this)">
+                            <span class="option-text">Pastikan semuanya aman dan nggak ada kesalahan fatal</span>
+                        </div>
+                    </div>
+                    <div class="option-row">
+                        <div class="label" data-choice="D" onclick="selectOption('D')">D</div>
+                        <div class="option" data-choice="D" onclick="selectOption(this)">
+                            <span class="option-text">Ngatur strategi biar semuanya sinkron antara tim dan tujuan kita</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="next-button" onclick="goToNextQuestion()">
+                    Next <span class="arrow">&rarr;</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="cat-svg">
+            <img src="kucing.svg" alt="Cat" />
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
