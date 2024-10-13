@@ -145,14 +145,14 @@
     background-position: top;
   }
   
-  .cat-svg {
+  .kucing {
     position: absolute;
     bottom: 15px;
     left: 100px;
     z-index: 11;
   }
   
-  .cat-svg img {
+  .kucing img {
     width: 200px;
     height: auto;
   }
